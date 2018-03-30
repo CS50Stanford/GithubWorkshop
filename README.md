@@ -25,3 +25,14 @@ After doing this step, you should be able to type "git" into your command line a
 
 
 ### You're All Set!
+
+## The Tutorial
+### 1. Repositories
+A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs. Typically, these repositories, or repos, will be used to house all the code + necessary materials for your project.
+#### Cloning This Repository
+This workshop will revolve around you (and everyone else) playing with this repository. To get started, you'll need to **clone** this repository on your machine. Think about cloning a repository as downloading a copy of that repo onto your local machine. To do this:
+1. Create an empty folder somewhere on your machine
+2. Navigate to that folder using your command line/Terminal
+3. Once inside that folder, type: *git clone https://github.com/CS50Stanford/GithubWorkshop.git*
+
+####
