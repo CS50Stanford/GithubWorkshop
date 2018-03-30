@@ -5,12 +5,23 @@ Welcome to your first workshop of CS50! Here, you'll learn how to use Github, a 
 ### What is Github?
 GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects without always having to be in the same place.
 
-This tutorial will teach you GitHub essentials like repositories, branches, commits, and pull requests. You’ll create your own Hello World repository and learn GitHub’s Pull Request workflow, a popular way to create and review code.
+This tutorial will teach you GitHub essentials like repositories, branches, commits, and pull requests. You’ll create your own Hello World repository and learn GitHub’s Pull Request workflow, a popular way to create and review code. The tutorial relies on using the command line interface, but all of these tasks can also be done without using the command line.
 
 ### Setup Instructions
-To follow along this tutorial, you need to have **(1) a Github account** and **(2) Install Git on your computer/machine**. 
+To follow along this tutorial, you need to have **(1) a Github account** and **(2) Install Git on your computer/machine**. If you choose not to install Git on your machine, refer to the slides on how to use Git without the command line!
 
 #### 1. Getting a Github Account
 Navigating to www.github.com will lead you to the Github home page where you can sign up for an account. When signing up, choose the **free** personal plan option, which will let you create unlimited public repositories. Later in this guide, we walk you through how to activate your snazzy **student package**.
 
 #### 2. Installing Git
+For this step, it is easiest if you just refer to Github's default setup article: https://help.github.com/articles/set-up-git/
+
+Follow the instructions for:
+- Downloading/Installing the lastest version of Git,
+- Setting your username in Git, and
+- Setting your email in Git
+
+After doing this step, you should be able to type "git" into your command line and get meaningful output.
+
+
+### You're All Set!
