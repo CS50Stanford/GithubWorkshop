@@ -21,10 +21,7 @@ Follow the instructions for:
 - Setting your username in Git, and
 - Setting your email in Git
 
-After doing this step, you should be able to type "git" into your command line and get meaningful output.
-
-
-### You're All Set!
+After doing this step, you should be able to type "git" into your command line and get meaningful output. You're all set!
 
 ## The Tutorial
 ### 1. Repositories
@@ -35,4 +32,10 @@ This workshop will revolve around you (and everyone else) playing with this repo
 2. Navigate to that folder using your command line/Terminal
 3. Once inside that folder, type: *git clone https://github.com/CS50Stanford/GithubWorkshop.git*
 
-####
+#### (Optional) Creating your own new repository
+Cloning repos are nice, but say you want to start your own new project. Here's how you'd make your own repo:
+1. In the upper right corner, next to your avatar or identicon, click the **+** and then select **New Repository**.
+2. Name your repository.
+3. Write a short description.
+4. Select Initialize this repository with a README.
+5. Click **Create Repository**
