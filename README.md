@@ -144,14 +144,42 @@ Congratulations! You've successfully created a Github account, cloned a reposito
 
 There are a few other things to touch upon, however, that will be important in your development process. These are **Pulling**, **Merging from Master**, and **Merge Conflicts**.
 
-#### "1. Before we push, we pull"
-Before you push any code to a branch, you always want to make sure that the code you're pushing is up to date. There may be more than one person working on the branch you're working on, and you always want to make sure To do this, we want to *pull* any new changes that've been made to your branch since the last time you pulled/cloned the branch.
+#### 1. "Pull Before You Push"
+Before you push any code to a branch, you always want to make sure that the code you're pushing is up to date with the branch you're pushing to. There may be more than one person working on the branch you're working on, and you always want to make sure that the code your pushing has all the changes that've been pushed up to that point. To do this, we want to *pull* any new changes that've been made to your branch since the last time you pulled/cloned the branch. **We want to make this *pull* right before we *push***.
 ```
 git pull
 ```
-This command is important! It will pull all new changes from your current branch that have been made since the last time you pulled/cloned. Once you pull, always make sure to test your code + to fix any conflicts that may arise.
+This command is important! It will pull all new changes from your current branch that have been made since the last time you pulled/cloned. Once you pull, always make sure to test your code + to fix any conflicts that may arise. Once you do this, you can go through the process of safely adding, committing, and pushing your code :)
 
 #### 2. Pulling and Merging from Master 
-As a reminder, in this tutrial, we were working on a *branch*. It's great that we just pulled all the changes from our branch, but what if we also want to pull changes from master?
+In this tutorial, we made all of our changes while working on an isolated *branch*. It's great that we just pulled all the changes from our branch, but what if the master branch changes while we're working on our feature branch? In this case, we want to make sure that all changes to master are reflected in our feature branch (otherwise we'd be working on an old product!).
+
+1. First, we need to checkout to the *master branch*.
+```
+git checkout master
+```
+2. Then we pull, which will pull all new changes made to the master branch since the last time we pulled/cloned.
+```
+git pull
+```
+3. Then we checkout back to our branch (again, do not do -b!)
+```
+git checkout YOUR_BRANCH_NAME
+```
+4. And lastly, we merge the updates to master into our branch.
+```
+git merge master
+```
+
+**Important:** Whenever something changes in the *master* branch, you should almost always pull from master and merge to your branch. The only time you should not do this is if merging from *master* would mess up the work you're doing.
 
 #### 3. Merge Conflicts
+Sometimes when you do the above steps, Github will throw a bunch of errors. These are called **Merge Conflicts**, and are scary to see but easy to fix if you know how :)
+
+Upon seeing the list of conflicts, you'll want to navigate into each file that has a conflict. There, if you look around, you'll see something like this:
+
+![alt text](merge_conflict.png)
+
+In short, a merge conflict occurs when two people edit the same area of code. In this case, Github does not know how to decide which peoples' code should persist. Github's solution is to make you, the developer, figure that out.
+
+A merge conflict separates the two conflicting versions - after seeing this, you simply need to decide which code to keep/which code to throw away. After that (and after removing all the junk in the file), you want to save, re-commit, and repeat the process of merging until you get no conflicts. After that, you can push!
