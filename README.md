@@ -11,7 +11,7 @@ This tutorial will teach you GitHub essentials like repositories, branches, comm
 To follow along this tutorial, you need to have **(1) a Github account** and **(2) Install Git on your computer/machine**. If you choose not to install Git on your machine, refer to the slides on how to use Git without the command line!
 
 #### 1. Getting a Github Account
-Navigating to www.github.com will lead you to the Github home page where you can sign up for an account. When signing up, choose the **free** personal plan option, which will let you create unlimited public repositories. Later in this guide, we walk you through how to activate your snazzy **student package**.
+Navigating to www.github.com will lead you to the Github home page where you can sign up for an account. When signing up, choose the **free** personal plan option, which will let you create unlimited public repositories. After completing this guide, you should also look into getting your free **student package**, which comes with a lot of good deals including private repos!
 
 #### 2. Installing Git
 For this step, it is easiest if you just refer to Github's default setup article: https://help.github.com/articles/set-up-git/
@@ -21,15 +21,20 @@ Follow the instructions for:
 - Setting your username globally in Git, and
 - Setting your email globally in Git
 
-After doing this step, you should be able to type "git" into your command line and get meaningful output. You're all set!
+After doing this step, you should be able to type "git" into your command line and get meaningful output.
 ```
 git
 ```
+You're all set!
+
+#### 3. Getting Permissions to This Repo
+To participate in this tutorial, we need to share this repo with you so that you have permissions! Once you complete your setup, fill out this form so that we can add your Github Username to this repo: https://goo.gl/forms/kQAOG9MJ3h0vBSNR2
+
 ## The Tutorial
 ### 1. Repositories
 A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs. Typically, these repositories, or repos, will be used to house all the code + necessary materials for your project.
 #### Cloning This Repository
-This workshop will revolve around you (and everyone else) playing with this repository. To get started, you'll need to **clone** this repository on your machine. Think about cloning a repository as downloading a copy of that repo onto your local machine that you can push to, pull from, and edit. To clone a repo:
+As a matter of fact, if you are looking at this, then you are currently in a repo! This workshop will revolve around you (and everyone else) playing with this repository. To get started, you'll need to **clone** this repository on your machine. Think about cloning a repository as downloading a copy of that repo onto your local machine that you can push to, pull from, and edit. To clone a repo:
 1. Create an empty folder somewhere on your machine
 2. Navigate to that folder using your command line/Terminal
 3. Once inside that folder, type:
@@ -52,7 +57,7 @@ Cloning repos are nice, but say you want to start your own new project. Here's h
 ### 2. Branches
 Branching is the way to work on different versions of a repository at one time. By default, every repository has one branch named *master* which is considered to be the definitive branch. We use other branches to experiment and make edits before *committing* them to master. In other words, think of the *master* branch as the branch that's meant to always be stable at any given time. Every other branch is used to experiment with creating new features, fixing bugs, etc... Once those features are fully implemented, you *merge* them into master to make them a part of the final product.
 
-**Note:** You'll see that some teams don't use branches and instead just commit everything to master. This is typically considered bad practice since it means you have a higher risk of messing up the master branch, which is BAD and hence not recommended. If you choose to do this approach, be very careful!
+**Note:** You'll see that some teams don't use branches and instead just commit everything to master. This is typically considered bad practice since it means you have a higher risk of messing up the master branch. If you for some reason absolutely need to do this approach, be very careful!
 
 #### Creating a Branch
 Lets create your first branch off of master: 
