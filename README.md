@@ -1,4 +1,4 @@
-# Github Workshop
+# CS50 Github Workshop
 Welcome to your first workshop of CS50! Here, you'll learn how to use Github, a version control system that allows for teams to concurrently work on the same code efficiently. Knowing how to use Github will be important both for this class and for a lot of future software development you'll do in the future. Let's get started!
 
 ## Getting Started
