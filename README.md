@@ -72,3 +72,6 @@ As a test, let's create a new file.
 *Note: The above 3 steps could've been done by also just creating a text file in whatever usual manner you create text files in. You don't have to use vim :)*
 
 #### Committing your changes
+Great! You've created a file, but this file only exists locally. How do we push it to your branch?
+
+```git status```
