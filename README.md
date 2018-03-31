@@ -47,15 +47,24 @@ Branching is the way to work on different versions of a repository at one time. 
 **Note:** You'll see that some teams don't use branches and instead just commit everything to master. This is typically considered bad practice since it means you have a higher risk of messing up the master branch, which is BAD and hence not recommended. If you choose to do this approach, be very careful!
 
 #### Creating a Branch
-Lets create your first branch off of master: *git checkout -b YOUR_BRANCH_NAME*
+Lets create your first branch off of master: 
+```
+git checkout -b YOUR_BRANCH_NAME
+```
 
 After doing that, you should get a message saying "Switched to a new branch 'YOUR_BRANCH_NAME'"! This means you've created your first branch! You can verify this by typing:
 
-*git branch*
+```
+git branch
+```
 
 Which will list all branches related to your local machine, with an asterisk next to the branch you are currently on.
 
-You can play around with jumping between branches by doing: *git checkout master*, which will switch you back to master, or *git checkout YOUR_BRANCH_NAME*, which will switch you back to your branch. Make sure to not include the -b! That will end up creating a new local branch!
+You can play around with jumping between branches by doing: 
+```
+git checkout master
+```
+which will switch you back to master, or *git checkout YOUR_BRANCH_NAME*, which will switch you back to your branch. Make sure to not include the -b! That will end up creating a new local branch!
 
 #### What just happened?
 When you create a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't affect the master branch, so you're free to experiment and commit changes here, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.
