@@ -22,7 +22,9 @@ Follow the instructions for:
 - Setting your email globally in Git
 
 After doing this step, you should be able to type "git" into your command line and get meaningful output. You're all set!
-
+```
+git
+```
 ## The Tutorial
 ### 1. Repositories
 A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs. Typically, these repositories, or repos, will be used to house all the code + necessary materials for your project.
@@ -30,8 +32,14 @@ A repository is usually used to organize a single project. Repositories can cont
 This workshop will revolve around you (and everyone else) playing with this repository. To get started, you'll need to **clone** this repository on your machine. Think about cloning a repository as downloading a copy of that repo onto your local machine that you can push to, pull from, and edit. To clone a repo:
 1. Create an empty folder somewhere on your machine
 2. Navigate to that folder using your command line/Terminal
-3. Once inside that folder, type: *git clone https://github.com/CS50Stanford/GithubWorkshop.git*
-4. That creates a folder titled "GithubWorkshop". Lastly, navigate into that folder: *cd GithubWorkshop* 
+3. Once inside that folder, type:
+```
+git clone https://github.com/CS50Stanford/GithubWorkshop.git
+```
+4. That creates a folder titled "GithubWorkshop". Lastly, navigate into that folder: 
+```
+cd GithubWorkshop
+```
 
 #### (Optional) Creating your own new repository
 Cloning repos are nice, but say you want to start your own new project. Here's how you'd make your own repo:
@@ -83,4 +91,56 @@ As a test, let's create a new file.
 #### Committing your changes
 Great! You've created a file, but this file only exists locally. How do we push it to your branch?
 
-```git status```
+First, we check the *status* of our branch to see what files are/aren't currently being tracked by Git.
+```
+git status
+```
+After typing this, you should see your newly created file listed as being "untracked". This means that when you choose to commit/push changes on your branch, any work you do in this file will not be included! Let's fix that by *adding* this file to the list of files Git will track.
+```
+git add yourfullname.txt
+```
+Typing *git status* again will show your file again, but this time not listed as untracked! Instead, git status says you have changes in this file that need to be committed. Let's do that.
+```
+git commit -m "Type a descriptive but not too long commit message here"
+```
+When committing files, you want to make sure you include a somewhat descriptive message about what you're committing. This is to ensure that if you need to revert to previous commits, that you know what each commit "did".
+
+#### Pushing!
+Now **ASSUMING YOUR BRANCH IS UP TO DATE**, you can push your code! First, verify that you are on the correct branch (NOT MASTER):
+```
+git branch
+```
+
+and then push:
+```
+git push
+```
+If this is your first push, you'll get an error message saying there is no "upstream branch". This is because when you did *git checkout -b YOUR_BRANCH_NAME*, you created a local remote branch that only existed on your computer. To make this branch persist, just follow the instructions they tell us to do:
+```
+git push --set-upstream origin YOUR_BRANCH_NAME
+```
+You might be asked to provide your Github username and passcode. Once you've done that, you will have successfully made your first push! You can verify this by going to github.com/CS50Stanford/GithubWorkshop/ and checking to see that your branch is listed under the dropdown titled "branch: master" (next to the *New Pull Request* button).
+
+And with that, you've done it! You made your first push to your branch on master.
+
+#### Creating a Pull Request
+Now that we have updated our branch by pushing, what if we want our changes to be reflected on the *master* branch? As a reminder, the *master* branch needs to always be in a stable/deployable state. Because of this, whenever we want to merge changes from a feature branch to the *master* branch, we want to always create a request so that others can *review* our changes before updating master.
+
+https://help.github.com/articles/creating-a-pull-request/
+
+The above link is the best, most straightforward way to learn how to create a pull request. It's very easy and is all done on the Github website!
+
+#### Merging your Pull Request to Master
+Note: This step is *supposed* to be done by another member of your team. However for this tutorial, just merge your own pull request to master. Just be very careful!
+
+![alt text](pull_request_example.png)
+
+#### "Before we push, we pull"
+Before you push any code to a branch, you always want to make sure that the code you're pushing is up to date. There may be more than one person working on the branch you're working on, and you always want to make sure To do this, we want to *pull* any new changes that've been made to your branch since the last time you pulled/cloned the branch.
+```
+git pull
+```
+This command is important! It will pull all new changes from your current branch that have been made since the last time you pulled/cloned. Once you pull, always make sure to test your code + to fix any conflicts that may arise.
+
+#### Optional but recommended: Pulling and Merging from Master 
+As a reminder, you are currently working on a *branch*. It's great that we just pulled all the changes
