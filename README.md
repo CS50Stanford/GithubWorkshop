@@ -5,7 +5,7 @@ Welcome to your first workshop of CS50! Here, you'll learn how to use Github, a 
 ### What is Github?
 GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects without always having to be in the same place.
 
-This tutorial will teach you GitHub essentials like repositories, branches, commits, and pull requests. You’ll create your own Hello World repository and learn GitHub’s Pull Request workflow, a popular way to create and review code. The tutorial relies on using the command line interface, but all of these tasks can also be done without using the command line.
+This tutorial will teach you GitHub essentials like repositories, branches, commits, and pull requests. You’ll be playing around in this repository and learn GitHub’s Pull Request workflow, a popular way to create and review code. The tutorial relies on using the command line interface, but all of these tasks can also be done without using the command line.
 
 ### Setup Instructions
 To follow along this tutorial, you need to have **(1) a Github account** and **(2) Install Git on your computer/machine**. If you choose not to install Git on your machine, refer to the slides on how to use Git without the command line!
