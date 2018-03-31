@@ -93,7 +93,7 @@ As a test, let's create a new file.
 
 *Note: The above 3 steps could've been done by also just creating a text file in whatever usual manner you create text files in. You don't have to use vim :)*
 
-#### Committing your changes
+### 3. Committing Your Changes
 Great! You've created a file, but this file only exists locally. How do we push it to your branch?
 
 First, we check the *status* of our branch to see what files are/aren't currently being tracked by Git.
@@ -110,7 +110,9 @@ git commit -m "Type a descriptive but not too long commit message here"
 ```
 When committing files, you want to make sure you include a somewhat descriptive message about what you're committing. This is to ensure that if you need to revert to previous commits, that you know what each commit "did".
 
-#### Pushing!
+**Tip: You should always be committing your files on a regular basis!** This ensures that if something goes wrong, you'll always be able to revert your work.
+
+### 4. Pushing!
 Now **ASSUMING YOUR BRANCH IS UP TO DATE**, you can push your code! First, verify that you are on the correct branch (NOT MASTER):
 ```
 git branch
@@ -128,7 +130,7 @@ You might be asked to provide your Github username and passcode. Once you've don
 
 And with that, you've done it! You made your first push to your branch on master.
 
-#### Creating a Pull Request
+### 5. Pull Requests
 Now that we have updated our branch by pushing, what if we want our changes to be reflected on the *master* branch? As a reminder, the *master* branch needs to always be in a stable/deployable state. Because of this, whenever we want to merge changes from a feature branch to the *master* branch, we want to always create a request so that others can *review* our changes before updating master.
 
 https://help.github.com/articles/creating-a-pull-request/
@@ -157,26 +159,26 @@ git pull
 This command is important! It will pull all new changes from your current branch that have been made since the last time you pulled/cloned. Once you pull, always make sure to test your code + to fix any conflicts that may arise. Once you do this, you can go through the process of safely adding, committing, and pushing your code :)
 
 #### 2. Pulling and Merging from Master 
-In this tutorial, we made all of our changes while working on an isolated *branch*. It's great that we just pulled all the changes from our branch, but what if the master branch changes while we're working on our feature branch? In this case, we want to make sure that all changes to master are reflected in our feature branch (otherwise we'd be working on an old product!).
+In this tutorial, we made all of our changes while working on an isolated *branch*. It's great that we just pulled all the changes from our branch, but what if the master branch changes while we're working on our feature branch? In this case, we want to make sure that all changes to master are reflected in our feature branch (otherwise we'd be working on an old product!). This is called merging from master. We want to *merge changes to master into our branch*. We do that as follows:
 
-1. First, we need to checkout to the *master branch*.
+1. First, we need to checkout to the *master* branch.
 ```
 git checkout master
 ```
-2. Then we pull, which will pull all new changes made to the master branch since the last time we pulled/cloned.
+2. Then we pull, which will pull all new changes made to the *master* branch since the last time we pulled/cloned.
 ```
 git pull
 ```
-3. Then we checkout back to our branch (again, do not do -b!)
+3. Then we checkout back to our branch (do not do -b)
 ```
 git checkout YOUR_BRANCH_NAME
 ```
-4. And lastly, we merge the updates to master into our branch.
+4. And lastly, we merge the updates to *master* into our branch.
 ```
 git merge master
 ```
 
-**Important:** Whenever something changes in the *master* branch, you should almost always pull from master and merge to your branch. The only time you should not do this is if merging from *master* would mess up the work you're doing.
+**Important:** Whenever something changes in the *master* branch, you should almost always pull from *master* and merge to your branch. The only time you should not do this is if merging from *master* would mess up the work you're doing.
 
 #### 3. Merge Conflicts
 Sometimes when you do the above steps, Github will throw a bunch of errors. These are called **Merge Conflicts**, and are scary to see but easy to fix if you know how :)
@@ -189,8 +191,16 @@ In short, a merge conflict occurs when two people edit the same area of code. In
 
 A merge conflict separates the two conflicting versions - after seeing this, you simply need to decide which code to keep/which code to throw away. After that (and after removing all the junk in the file), you want to save, re-commit, and repeat the process of merging until you get no conflicts. After that, you can push!
 
-## Your Next Task
-Congrats! You finished the CS50 Github Tutorial. At this point, you've gone through the basics of Github and learned how to perform a standard workflow while using Github. From here, your next task will be to work with your team to create a Github Repo for your CS50 project! For this, you'll be working with your team members + your project mentor. Your goal should be to get this repo up and make a commit to it by the end of today!
+## Rules of Thumb
+Now that you know how to do all the basic tasks of Github, the following are a bunch of basic rules to keep in mind:
+
+1. Whenever you decide to resume working on your project, **(1)** checkout to *master*, **(2)** git pull, **(3)** and then merge any new changes from *master* into your new branch.
+2. Whenever you want to push changes to a branch, always **pull** to ensure you're pushing the most recent version of code.
+3. Whenever you want to push changes that will be merged to master, always **pull and merge from master** to ensure your code doesn't conflict with the *master* branch.
+4. When in doubt, always **commit changes**. Github is a nice tool in that its version control capabilities allow us to *revert* to previous states, but only as long as we are actively committing. This is important!
+
+## Your Assignment
+Congrats! You finished the CS50 Github Tutorial. At this point, you've gone through the basics of Github and learned how to perform a standard workflow while using Github. **Your next task will be to create a Github Repo for your CS50 project!** For this, you'll be working with your team members + your project mentor. Your goal should be to get this repo up and for each member to make a small commit to it by the end of today.
 
 If you have further questions, definitely feel free to reach out to us. There are also an abundance of resources online/on StackOverflow for Github tutorials, so do look into those if you get stuck/have questions.
 
