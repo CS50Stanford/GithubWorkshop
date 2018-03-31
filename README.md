@@ -18,8 +18,8 @@ For this step, it is easiest if you just refer to Github's default setup article
 
 Follow the instructions for:
 - Downloading/Installing the lastest version of Git,
-- Setting your username in Git, and
-- Setting your email in Git
+- Setting your username globally in Git, and
+- Setting your email globally in Git
 
 After doing this step, you should be able to type "git" into your command line and get meaningful output. You're all set!
 
@@ -31,6 +31,7 @@ This workshop will revolve around you (and everyone else) playing with this repo
 1. Create an empty folder somewhere on your machine
 2. Navigate to that folder using your command line/Terminal
 3. Once inside that folder, type: *git clone https://github.com/CS50Stanford/GithubWorkshop.git*
+4. That creates a folder titled "GithubWorkshop". Lastly, navigate into that folder: *cd GithubWorkshop* 
 
 #### (Optional) Creating your own new repository
 Cloning repos are nice, but say you want to start your own new project. Here's how you'd make your own repo:
@@ -41,6 +42,33 @@ Cloning repos are nice, but say you want to start your own new project. Here's h
 5. Click **Create Repository**
 
 ### 2. Branches
-Branching is the way to work on different versions of a repository at one time. By default, every repository has one branch named *master* which is considered to be the definitive branch. We use other branches to experiment and make edits before *committing* them to master. In other words, think of the *master* branch as the branch that's meant to always be stable at any given time. Every other branch is used to experiment with creating new features, fixing bugs, etc...
+Branching is the way to work on different versions of a repository at one time. By default, every repository has one branch named *master* which is considered to be the definitive branch. We use other branches to experiment and make edits before *committing* them to master. In other words, think of the *master* branch as the branch that's meant to always be stable at any given time. Every other branch is used to experiment with creating new features, fixing bugs, etc... Once those features are fully implemented, you *merge* them into master to make them a part of the final product.
 
-**Note:** Some projects don't use branches
+**Note:** You'll see that some teams don't use branches and instead just commit everything to master. This is typically considered bad practice since it means you have a higher risk of messing up the master branch, which is BAD and hence not recommended. If you choose to do this approach, be very careful!
+
+#### Creating a Branch
+Lets create your first branch off of master: *git checkout -b YOUR_BRANCH_NAME*
+
+After doing that, you should get a message saying "Switched to a new branch 'YOUR_BRANCH_NAME'"! This means you've created your first branch! You can verify this by typing:
+
+*git branch*
+
+Which will list all branches related to your local machine, with an asterisk next to the branch you are currently on.
+
+You can play around with jumping between branches by doing: *git checkout master*, which will switch you back to master, or *git checkout YOUR_BRANCH_NAME*, which will switch you back to your branch. Make sure to not include the -b! That will end up creating a new local branch!
+
+#### What just happened?
+When you create a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't affect the master branch, so you're free to experiment and commit changes here, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.
+
+As a note, this branch you just created won't actually persist in your actual Github directory until you make your first **push**.
+
+#### Creating a new file
+As a test, let's create a new file. 
+
+1. Type: *vim yourfullname.txt* to create a text file.
+2. In the file, type your name, year, major, CS50 Team, and two fun facts about yourself. Make them cool!
+3. After you're done, save and exit by typing: *:wq*
+
+*Note: The above 3 steps could've been done by also just creating a text file in whatever usual manner you create text files in. You don't have to use vim :)*
+
+#### Committing your changes
