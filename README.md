@@ -133,14 +133,25 @@ The above link is the best, most straightforward way to learn how to create a pu
 #### Merging your Pull Request to Master
 Note: This step is *supposed* to be done by another member of your team. However for this tutorial, just merge your own pull request to master. Just be very careful!
 
+After creating your pull request, you should see this screen. What's important to note is the green checkmark next to the "This branch has no conflicts with the base branch". This means that merging your branch to master will not create any code conflicts! If this is the case, you should be okay with merging to Master. If you wanted to be absolutely sure, you can click on the "Files Changed" tab to review changes before merging.
+
 ![alt text](pull_request_example.png)
 
-#### "Before we push, we pull"
+When you're ready, click the *Merge Pull Request* button. Viola! You've successfully made a change and merged it to master! Congratulations!!!
+
+### More Important Pointers
+Congratulations! You've successfully created a Github account, cloned a repository, made a new file, committed that file, pushed it, and merged it to master. Woooo!
+
+There are a few other things to touch upon, however, that will be important in your development process. These are **Pulling**, **Merging from Master**, and **Merge Conflicts**.
+
+#### "1. Before we push, we pull"
 Before you push any code to a branch, you always want to make sure that the code you're pushing is up to date. There may be more than one person working on the branch you're working on, and you always want to make sure To do this, we want to *pull* any new changes that've been made to your branch since the last time you pulled/cloned the branch.
 ```
 git pull
 ```
 This command is important! It will pull all new changes from your current branch that have been made since the last time you pulled/cloned. Once you pull, always make sure to test your code + to fix any conflicts that may arise.
 
-#### Optional but recommended: Pulling and Merging from Master 
-As a reminder, you are currently working on a *branch*. It's great that we just pulled all the changes
+#### 2. Pulling and Merging from Master 
+As a reminder, in this tutrial, we were working on a *branch*. It's great that we just pulled all the changes from our branch, but what if we also want to pull changes from master?
+
+#### 3. Merge Conflicts
