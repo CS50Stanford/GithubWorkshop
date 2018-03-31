@@ -183,3 +183,10 @@ Upon seeing the list of conflicts, you'll want to navigate into each file that h
 In short, a merge conflict occurs when two people edit the same area of code. In this case, Github does not know how to decide which peoples' code should persist. Github's solution is to make you, the developer, figure that out.
 
 A merge conflict separates the two conflicting versions - after seeing this, you simply need to decide which code to keep/which code to throw away. After that (and after removing all the junk in the file), you want to save, re-commit, and repeat the process of merging until you get no conflicts. After that, you can push!
+
+## Your Next Task
+Congrats! You finished the CS50 Github Tutorial. At this point, you've gone through the basics of Github and learned how to perform a standard workflow while using Github. From here, your next task will be to work with your team to create a Github Repo for your CS50 project! For this, you'll be working with your team members + your project mentor. Your goal should be to get this repo up and make a commit to it by the end of today!
+
+If you have further questions, definitely feel free to reach out to us. There are also an abundance of resources online/on StackOverflow for Github tutorials, so do look into those if you get stuck/have questions.
+
+- The CS50 Teaching Team
