@@ -27,7 +27,7 @@ After doing this step, you should be able to type "git" into your command line a
 ### 1. Repositories
 A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs. Typically, these repositories, or repos, will be used to house all the code + necessary materials for your project.
 #### Cloning This Repository
-This workshop will revolve around you (and everyone else) playing with this repository. To get started, you'll need to **clone** this repository on your machine. Think about cloning a repository as downloading a copy of that repo onto your local machine. To do this:
+This workshop will revolve around you (and everyone else) playing with this repository. To get started, you'll need to **clone** this repository on your machine. Think about cloning a repository as downloading a copy of that repo onto your local machine that you can push to, pull from, and edit. To clone a repo:
 1. Create an empty folder somewhere on your machine
 2. Navigate to that folder using your command line/Terminal
 3. Once inside that folder, type: *git clone https://github.com/CS50Stanford/GithubWorkshop.git*
@@ -39,3 +39,8 @@ Cloning repos are nice, but say you want to start your own new project. Here's h
 3. Write a short description.
 4. Select Initialize this repository with a README.
 5. Click **Create Repository**
+
+### 2. Branches
+Branching is the way to work on different versions of a repository at one time. By default, every repository has one branch named *master* which is considered to be the definitive branch. We use other branches to experiment and make edits before *committing* them to master. In other words, think of the *master* branch as the branch that's meant to always be stable at any given time. Every other branch is used to experiment with creating new features, fixing bugs, etc...
+
+**Note:** Some projects don't use branches
