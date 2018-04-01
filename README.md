@@ -5,10 +5,10 @@ Welcome to your first workshop of CS50! Here, you'll learn how to use Github, a 
 ### What is Github?
 GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects without always having to be in the same place.
 
-This tutorial will teach you GitHub essentials like repositories, branches, commits, and pull requests. You’ll be playing around in this repository and learn GitHub’s Pull Request workflow, a popular way to create and review code. The tutorial relies on using the command line interface, but all of these tasks can also be done without using the command line.
+This tutorial will teach you GitHub essentials like repositories, branches, commits, and pull requests. You’ll be playing around in this repository and learn GitHub’s Pull Request workflow, a popular way to create and review code. The tutorial relies on using the command line interface. All of these tasks can also be done without using the command line, but this is not recommended.
 
 ### Setup Instructions
-To follow along this tutorial, you need to have **(1) a Github account** and **(2) Install Git on your computer/machine**. If you choose not to install Git on your machine, refer to the slides on how to use Git without the command line!
+To follow along this tutorial, you need to have **(1) a Github account** and **(2) Install Git on your computer/machine**.
 
 #### 1. Getting a Github Account
 Navigating to www.github.com will lead you to the Github home page where you can sign up for an account. When signing up, choose the **free** personal plan option, which will let you create unlimited public repositories. After completing this guide, you should also look into getting your free **student package**, which comes with a lot of good deals including private repos!
@@ -28,7 +28,7 @@ git
 You're all set!
 
 #### 3. Getting Permissions to This Repo
-To participate in this tutorial, we need to share this repo with you so that you have permissions! Once you complete your setup, fill out this form so that we can add your Github Username to this repo: https://goo.gl/forms/kQAOG9MJ3h0vBSNR2
+To participate in this tutorial, we need to share this repo with you so that you have permissions! Once you complete your setup, fill out this form so that we can add your Github Username to this repo: bit.ly/cs50_github_form
 
 ## The Tutorial
 ### 1. Repositories
