@@ -1,0 +1,3 @@
+a file made in vim
+hard to copy, paste, and type
+shitty editor
